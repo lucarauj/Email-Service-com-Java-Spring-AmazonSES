@@ -4,4 +4,8 @@
 
 - Spring Web
 - Lombok
-- 
+- AWS Java SDK For Amazon SES
+
+## Anotações
+
+- @Service
