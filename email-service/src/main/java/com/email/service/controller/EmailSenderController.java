@@ -6,9 +6,11 @@ import com.email.service.service.EmailSenderService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
+@RequestMapping("/api/email")
 public class EmailSenderController {
 
     private final EmailSenderService emailSenderService;
@@ -17,10 +19,10 @@ public class EmailSenderController {
         this.emailSenderService = emailSenderService;
     }
 
-    @PostMapping
+    @PostMapping("/send")
     public ResponseEntity<String> sendEmail(@RequestBody EmailRequest emailRequest) {
         try {
-            emailSenderService.sendEmail(emailRequest.to(), emailRequest.subject(), emailRequest.text());
+            this.emailSenderService.sendEmail(emailRequest.to(), emailRequest.subject(), emailRequest.text());
             return ResponseEntity.ok("E-mail enviado com sucesso!");
         } catch (EmailServiceException exception) {
             return ResponseEntity.internalServerError().body("Erro ao enviar e-mail!");

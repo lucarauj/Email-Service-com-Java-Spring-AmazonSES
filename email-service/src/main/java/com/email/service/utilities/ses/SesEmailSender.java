@@ -19,14 +19,14 @@ public class SesEmailSender implements EmailSenderGateway {
     @Override
     public void sendEmail(String to, String subject, String text) {
         SendEmailRequest request = new SendEmailRequest()
-                .withSource("lucas@gmail.com")
+                .withSource("lukas.martins193@gmail.com")
                 .withDestination(new Destination().withToAddresses(to))
                 .withMessage(new Message()
                         .withSubject(new Content(subject))
                         .withBody(new Body().withText(new Content(text)))
                 );
         try {
-            amazonSimpleEmailService.sendEmail(request);
+            this.amazonSimpleEmailService.sendEmail(request);
         } catch (AmazonServiceException exception) {
             throw new EmailServiceException("Falha ao enviar e-mail!", exception);
         }
