@@ -1,6 +1,6 @@
 [![NPM](https://img.shields.io/npm/l/react)](https://github.com/lucarauj/Email-Service-com-Java-Spring/blob/main/LICENSE)
 
-<h1 align="center">Email Service com Java Spring e Amazon SES</h1>
+<h1 align="center">Email Service com Java, Spring e Amazon SES</h1>
 
 <br>
 
@@ -86,9 +86,11 @@ region:us-east-1
 ```
 
 <br>
+<hr>
+<br>
 
-<p align="left"><img width="900px" src="" /></p>
-<p align="left"><img width="900px" src="" /></p>
+<p align="left"><img width="800px" src="https://github.com/lucarauj/Email-Service-com-Java-Spring/blob/main/images/Postman.png" /></p>
+<p align="left"><img width="600px" src="https://github.com/lucarauj/Email-Service-com-Java-Spring/blob/main/images/Gmail.png" /></p>
 
 <br>
 
