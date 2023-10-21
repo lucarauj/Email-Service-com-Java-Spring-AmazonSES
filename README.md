@@ -2,6 +2,8 @@
 
 <h1 align="center">Email Service com Java, Spring e Amazon SES</h1>
 
+<p align="center"><img width="500px" src="https://github.com/lucarauj/Email-Service-com-Java-Spring/blob/main/images/Amazon-SES.png" /></p>
+
 <br>
 
 ## Dependências
