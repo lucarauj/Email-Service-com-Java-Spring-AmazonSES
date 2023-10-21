@@ -8,4 +8,7 @@
 
 ## Anotações
 
+- @PostMapping
+- @RequestBody
+- @RestController
 - @Service

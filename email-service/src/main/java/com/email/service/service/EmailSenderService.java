@@ -1,4 +1,4 @@
-package com.email.service.controller;
+package com.email.service.service;
 
 import com.email.service.model.EmailSenderUseCase;
 import com.email.service.view.EmailSenderGateway;
